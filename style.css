@@ -12,7 +12,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:linear-gradient(180deg,#2e3192 30%, #3d66a9 60%, #4b8fd4 100%);color:var(--text);font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
+html,body{margin:0;padding:0;background:#eeeeee;color:var(--text);font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block;border-radius:12px}
 .container{width:min(1100px,92%);margin:0 auto}
@@ -26,7 +26,7 @@ header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
 nav a{opacity:.9}
 nav a:hover{opacity:1}
-.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#0b1022;padding:10px 16px;border-radius:14px;font-weight:700;box-shadow:0 10px 24px rgba(26, 37, 241, 0.35)}
+.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#2e3192;padding:10px 16px;border-radius:14px;font-weight:700;box-shadow:0 10px 24px rgba(26, 37, 241, 0.35)}
 .logo{width: 60px; height:auto;border-radius:7px}
 
 /* Hero */
