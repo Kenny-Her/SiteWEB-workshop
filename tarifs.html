@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Tarifs Toilettage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="siteweb.html" class="brand">
+        <img src="assets/image/logo.png" alt="Logo Coeur et pattes" class="logo" />
+        <span class="label">Coeur & Pattes</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="siteweb.html">Accueil</a></li>
+          <li><a href="#tarifs" class="cta">Nos Tarifs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container" id="tarifs">
+      <h1>Tarifs de toilettage</h1>
+      <p>Découvrez nos prix pour le toilettage et les soins de vos compagnons :</p>
+      <table style="width:100%;max-width:500px;margin:24px 0;border-collapse:collapse;">
+        <thead>
+          <tr style="background:rgba(148,163,184,.15);">
+            <th>Service</th>
+            <th>Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bain & séchage (petit chien)</td>
+            <td>25€</td>
+          </tr>
+          <tr>
+            <td>Bain & séchage (grand chien)</td>
+            <td>35€</td>
+          </tr>
+          <tr>
+            <td>Toilettage complet (petit chien)</td>
+            <td>40€</td>
+          </tr>
+          <tr>
+            <td>Toilettage complet (grand chien)</td>
+            <td>55€</td>
+          </tr>
+          <tr>
+            <td>Toilettage chat</td>
+            <td>30€</td>
+          </tr>
+          <tr>
+            <td>Coupe griffes</td>
+            <td>10€</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Pour des soins spécifiques ou des races particulières, contactez-nous pour un devis personnalisé.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Coeur & Pattes — Spa animalier.
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
