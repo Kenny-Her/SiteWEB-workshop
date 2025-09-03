@@ -1,0 +1,83 @@
+:root{
+--bg: #8a6f3d;
+--surface: #111827;
+--muted: #334155;
+--card: #ff00dd;
+--primary: #ff00f7;
+--primary-2: #ff00dd;
+--text: #f8fafc;
+--text-muted: #cbd5e1;
+--radius: 18px;
+--shadow: 0 20px 45px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:linear-gradient(180deg,#2e3192 30%, #3d66a9 60%, #4b8fd4 100%);color:var(--text);font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;border-radius:12px}
+.container{width:min(1100px,92%);margin:0 auto}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);background:rgba(181, 109, 205, 0.6);border-bottom:1px solid rgba(148,163,184,.15)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+.brand .mark{width:38px;height:38px;display:grid;place-items:center;border-radius:14px;background:radial-gradient(120px 60px at 30% 0%, #f59e0b55, transparent), linear-gradient(135deg, #1e293b, #0b1022);box-shadow:var(--shadow)}
+.brand .label{font-size:1.125rem}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{opacity:.9}
+nav a:hover{opacity:1}
+.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#0b1022;padding:10px 16px;border-radius:14px;font-weight:700;box-shadow:0 10px 24px rgba(245,158,11,.35)}
+.logo{max-width:100%;height:auto;border-radius:14px}
+
+
+/* Hero */
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.kicker{color:var(--primary-2);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:.4rem 0 1rem}
+.lead{color:var(--text-muted);font-size:1.05rem}
+.actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid rgba(148,163,184,.2);background:#0b1326}
+.btn:hover{border-color:rgba(252,211,77,.55)}
+
+.hero-card{background:linear-gradient(180deg,#0b1326, #0a1222);border:1px solid rgba(148,163,184,.18);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.pill{font-size:.75rem;color:var(--text-muted)}
+
+/* Sections */
+section{padding:54px 0}
+.section-title{font-size:1.6rem;margin:0 0 16px}
+.section-sub{color:var(--primary);margin:-6px 0 26px}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(180deg,#0b1326, #0a1222);border:1px solid rgba(148,163,184,.18);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.card h3{margin:8px 0 6px}
+.badge{display:inline-block;font-size:.72rem;padding:6px 10px;border-radius:999px;background:rgba(252,211,77,.18);color:var(--primary-2);border:1px solid rgba(252,211,77,.35)}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery img{aspect-ratio:1/1;object-fit:cover}
+
+/* Contact */
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:#0b1326;color:var(--text)}
+textarea{min-height:140px}
+label{font-size:.9rem;color:var(--text-muted)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{font-size:.85rem;color:var(--text-muted)}
+
+/* Footer */
+footer{padding:28px 0;color:var(--text-muted);border-top:1px solid rgba(148,163,184,.15)}
+
+/* Responsive */
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width: 640px){
+  nav ul{display:none}
+  .grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .form-row{grid-template-columns:1fr}
+}
