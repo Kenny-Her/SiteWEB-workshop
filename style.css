@@ -58,7 +58,7 @@ section{padding:54px 0}
 
 /* Reservation */
 form{display:grid;gap:12px}
-input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.25);background:#0b1326;color:var(--text)}
+input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(0, 0, 0, 0.25);background:#0b1326;color:var(--text)}
 textarea{min-height:140px}
 label{font-size:.9rem;color:var(--text-muted)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -67,10 +67,11 @@ label{font-size:.9rem;color:var(--text-muted)}
 /* Contact */
 .contact-info{display:flex;flex-direction:column;gap:12px;margin-top:18px}
 .contact-item{display:flex;align-items:center;gap:12px}
+
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 55px;
   text-align: start;
   text-decoration: none;
   margin: 5px 2px;
