@@ -1,10 +1,6 @@
 :root{
---bg: #8a6f3d;
---surface: #111827;
---muted: #334155;
---card: #ff00dd;
---primary: #ff00f7;
---primary-2: #ff00dd;
+--primary: #2e3192;
+--primary-2: #4374a0;
 --text: #f8fafc;
 --text-muted: #cbd5e1;
 --radius: 18px;
@@ -18,20 +14,20 @@ img{max-width:100%;display:block;border-radius:12px}
 .container{width:min(1100px,92%);margin:0 auto}
 
 /* Header */
-header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);background:rgba(181, 109, 205, 0.6);border-bottom:1px solid rgba(148,163,184,.15)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.2) blur(8px);background:rgba(60, 66, 69, 0.6);border-bottom:1px solid rgba(148,163,184,.15)}
+.nav{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:20px 0}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-.brand .mark{width:38px;height:38px;display:grid;place-items:center;border-radius:14px;background:radial-gradient(120px 60px at 30% 0%, #f59e0b55, transparent), linear-gradient(135deg, #1e293b, #0b1022);box-shadow:var(--shadow)}
 .brand .label{font-size:1.125rem}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
 nav a{opacity:.9}
 nav a:hover{opacity:1}
-.cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#2e3192;padding:10px 16px;border-radius:14px;font-weight:700;box-shadow:0 10px 24px rgba(26, 37, 241, 0.35)}
+.cta{list-style:none;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#2e3192;padding:10px 16px;border-radius:14px;font-weight:700;box-shadow:0 10px 24px rgba(26, 37, 241, 0.35)}
 .logo{width: 60px; height:auto;border-radius:7px}
 
 /* Hero */
-.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
-.kicker{color:#2e3192 ;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font: size 8px; align-items:center}
+.hero{padding:100px 0 40px;display:flex;gap:40px;align-items:center}
+.center {align-items: center; text-align: center; font-size:100px;color: var(--primary);}
+.kicker{color:#2e3192 ;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:8px; align-items:center;text-align:center}
 h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:.4rem 0 1rem;}
 .lead{color:var(--text-muted);font-size:1.05rem}
 .actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
